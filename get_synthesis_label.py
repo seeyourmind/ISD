@@ -173,5 +173,5 @@ if __name__ == '__main__':
     best_cfg['dropout'] = 0.3
     best_cfg['threshold'] = 0.7
     best_cfg['lr'] = 0.0001
-    best_cfg['pre_model'] = '/mnt/samsung/fangzhiyu/VULCAN_Python/ZSCRF-distill/models/Distill-CUB-SS-67.177_checkpoint.pth.tar'  #'/home/fangzhiyu/VULCAN_Python/ZSCRF-distill/srouce/PS/AWA-PS-P_65.295_checkpoint.pth.tar'
+    best_cfg['pre_model'] = './models/Distill-CUB-SS-67.177_checkpoint.pth.tar' 
     infer(best_cfg, split='SS')
