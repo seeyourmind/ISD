@@ -2,10 +2,8 @@
 # # -*- encoding: utf-8 -*-
 import torchvision.models as models
 import argparse
-zsl_data = '/mnt/samsung/fangzhiyu/tempDataset'
-root = '/mnt/samsung/fangzhiyu/VULCAN_Python/ZSCRF-distill'
-# root = '/home/fangzhiyu/VULCAN_Python/ZSCRF-distill'
-# zsl_data = '/home/fangzhiyu/VULCAN_Python/ZSL_Data'
+zsl_data = '/home/data/tempDataset'
+root = '/home/code/ZSCRF-distill'
 model_names = sorted(name for name in models.__dict__
                      if name.islower() and not name.startswith("__")
                      and callable(models.__dict__[name]))
