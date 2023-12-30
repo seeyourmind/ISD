@@ -12,10 +12,10 @@ import os
 def config_process(config):
     if config.dataset == 'CUB':
         config.image_dir = os.path.join(config.imagedir, 'CUB_200_2011/CUB_200_2011/images/')
-        config.image_label = os.path.join('/mnt/samsung/fangzhiyu/VULCAN_Python/NonColliderWeight/data/CUB', 'image_label_PS.txt')
-        config.trainval_classes = os.path.join('/mnt/samsung/fangzhiyu/VULCAN_Python/NonColliderWeight/data/CUB', 'trainvalclasses.txt')
-        config.test_classes = os.path.join('/mnt/samsung/fangzhiyu/VULCAN_Python/NonColliderWeight/data/CUB', 'testclasses.txt')
-        config.all_data = os.path.join('/mnt/samsung/fangzhiyu/tempDataset/CUB_200_2011/CUB_200_2011', 'images.txt')
+        config.image_label = os.path.join('./data/CUB', 'image_label_PS.txt')
+        config.trainval_classes = os.path.join('./data/CUB', 'trainvalclasses.txt')
+        config.test_classes = os.path.join('./data/CUB', 'testclasses.txt')
+        config.all_data = os.path.join('./tempDataset/CUB_200_2011/CUB_200_2011', 'images.txt')
         # P split
         config.trainval_ps = os.path.join(config.data_root, 'PS', config.txtdir, 'trainval.txt')
         config.train_class_ps = os.path.join(config.data_root, 'PS', config.txtdir, 'trainvalclasses.txt')
@@ -35,10 +35,10 @@ def config_process(config):
         config.vit_embed_dim = 312
         config.vit_num_heads = 26
         # mat file
-        config.res101_ps = os.path.join('/mnt/samsung/fangzhiyu/tempDataset/GoodBadUgly/PS', 'CUB', 'res101.mat')
-        config.att_splits_ps = os.path.join('/mnt/samsung/fangzhiyu/tempDataset/GoodBadUgly/PS', 'CUB', 'att_splits.mat')
-        config.res101_ss = os.path.join('/mnt/samsung/fangzhiyu/tempDataset/GoodBadUgly/SS', 'CUB', 'res101.mat')
-        config.att_splits_ss = os.path.join('/mnt/samsung/fangzhiyu/tempDataset/GoodBadUgly/SS', 'CUB', 'att_splits.mat')
+        config.res101_ps = os.path.join('./tempDataset/GoodBadUgly/PS', 'CUB', 'res101.mat')
+        config.att_splits_ps = os.path.join('./tempDataset/GoodBadUgly/PS', 'CUB', 'att_splits.mat')
+        config.res101_ss = os.path.join('./tempDataset/GoodBadUgly/SS', 'CUB', 'res101.mat')
+        config.att_splits_ss = os.path.join('./tempDataset/GoodBadUgly/SS', 'CUB', 'att_splits.mat')
         config.delete_path = '/BS/Deep_Fragments/work/MSc/CUB_200_2011/CUB_200_2011/images/'
 
     if config.dataset == 'AWA2':
@@ -62,15 +62,15 @@ def config_process(config):
         config.vit_embed_dim = 85
         config.vit_num_heads = 17
         # mat file
-        config.res101_ps = os.path.join('/mnt/samsung/fangzhiyu/tempDataset/GoodBadUgly/PS', 'AWA2', 'res101.mat')
-        config.att_splits_ps = os.path.join('/mnt/samsung/fangzhiyu/tempDataset/GoodBadUgly/PS', 'AWA2', 'att_splits.mat')
-        config.res101_ss = os.path.join('/mnt/samsung/fangzhiyu/tempDataset/GoodBadUgly/SS', 'AWA2', 'res101.mat')
-        config.att_splits_ss = os.path.join('/mnt/samsung/fangzhiyu/tempDataset/GoodBadUgly/SS', 'AWA2', 'att_splits.mat')
+        config.res101_ps = os.path.join('./tempDataset/GoodBadUgly/PS', 'AWA2', 'res101.mat')
+        config.att_splits_ps = os.path.join('./tempDataset/GoodBadUgly/PS', 'AWA2', 'att_splits.mat')
+        config.res101_ss = os.path.join('./tempDataset/GoodBadUgly/SS', 'AWA2', 'res101.mat')
+        config.att_splits_ss = os.path.join('./tempDataset/GoodBadUgly/SS', 'AWA2', 'att_splits.mat')
         config.delete_path = '/BS/xian/work/data/Animals_with_Attributes2//JPEGImages/'
 
     if config.dataset == 'SUN':
         config.image_dir = os.path.join(config.imagedir, 'SUNAttributeDB/images/')
-        config.all_data = os.path.join('/home/fangzhiyu/VULCAN_Python/ZSL_Data/SUNAttributeDB', 'images.txt')
+        config.all_data = os.path.join('./ZSL_Data/SUNAttributeDB', 'images.txt')
         # P split
         config.trainval_ps = os.path.join(config.data_root, 'PS', config.txtdir, 'trainval.txt')
         config.train_class_ps = os.path.join(config.data_root, 'PS', config.txtdir, 'trainvalclasses.txt')
