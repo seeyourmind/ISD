@@ -363,7 +363,7 @@ def infer(best_cfg, logger, split='PS'):
     # model = ZeroShotCRF(best_cfg, model, Parameter(datasets[0][5]), Parameter(datasets[0][6]))
     model = nn.DataParallel(model).cuda()  # multi GUP acceleration
 
-    best_cfg['pre_model'] = '/mnt/samsung/fangzhiyu/VULCAN_Python/ZSCRF-distill/models/Distill-CUB-SS-67.177_checkpoint.pth.tar'
+    best_cfg['pre_model'] = './models/Distill-CUB-SS-67.177_checkpoint.pth.tar'
     load_model(best_cfg, model, None, best_cfg['pre_model'])
     # define loss and optimizer
     if split == 'gen':
